@@ -1,0 +1,51 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/machine.txt",
+        "type": "auto",
+        "height": 15,
+        "width": 30,
+		"color": {
+			"1": "white"
+		}
+    },
+    "modules": [
+		{
+			"type": "custom",
+			"format": "STATUS UPDATE:",
+			"outputColor": "white"
+		},
+		"break",
+		{
+			"type": "custom",
+			"format": "MACHINE ID:          V1",
+			"outputColor": "white"
+		},
+		{
+			"type": "custom",
+			"format": "LOCATION:            APPROACHING HELL",
+			"outputColor": "white"
+		},
+		{
+			"type": "custom",
+			"format": "CURRENT OBJECTIVE:   FIND A WEAPON",
+			"outputColor": "white"
+		},
+		"break",
+		{
+			"type": "custom",
+			"format": "MANKIND IS DEAD.",
+			"outputColor": "red"
+		},
+		{
+			"type": "custom",
+			"format": "BLOOD IS FUEL.",
+			"outputColor": "red"
+		},
+		{
+			"type": "custom",
+			"format": "HELL IS FULL.",
+			"outputColor": "red"
+		}
+    ]
+}
