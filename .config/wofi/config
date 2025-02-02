@@ -1,0 +1,6 @@
+show=drun
+allow_images=false
+prompt=The World Looks White
+lines=8
+hide_scroll=true
+term=kitty

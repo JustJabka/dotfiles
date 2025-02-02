@@ -1,0 +1,25 @@
+* {
+	border-radius: 10px;
+}
+
+window {
+	font-family: "MesloLGS Nerd Font Mono Bold";
+	font-size: 16px;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: black;
+}
+
+#entry {
+	padding: 8px;
+}
+
+#entry:selected {
+	background-color: black;
+	border-radius: 8px;
+}
+
+#input {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: black;
+	padding: 4px;
+}

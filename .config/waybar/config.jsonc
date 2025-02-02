@@ -1,0 +1,51 @@
+{
+	"layer": "top",
+	"position": "top",
+	"margin": 10,
+	"height": 30,
+	"modules-left": ["hyprland/workspaces"],
+	"modules-center": ["clock"],
+	"modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "battery"],
+	"disable-scroll": true,
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"tooltip": false,
+		"format-icons": {
+            "1": "",
+			"2": "",
+			"3": "",
+			"4": "",
+			"5": "",
+			"urgent": "",
+			"active": "",
+			"default": ""
+		}
+	},
+	"battery": {
+		"format": "{icon}  {capacity}%",
+		"format-icons": ["", "", "", "", ""],
+		"tooltip": false
+	},
+	"network": {
+		"format-wifi": "   {essid}",
+		"format-ethernet": "󰈀  {ipaddr}",
+		"format-disconnected": "󰤭  Disconnected",
+		"tooltip": false
+	},
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+	},
+	"hyprland/language": {
+		"format": "   {1}",
+		"tooltip": false,
+	},
+	"pulseaudio": {
+		"format": "{icon}  {volume}%",
+		"format-muted": "",
+		"format-icons": {
+			"default": ["", "", ""]
+		},
+		"tooltip": false
+	}
+}
