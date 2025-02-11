@@ -3,9 +3,9 @@
 	"position": "top",
 	"margin": 10,
 	"height": 30,
-	"modules-left": ["hyprland/workspaces"],
+	"modules-left": ["cpu", "memory", "disk", "hyprland/workspaces"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "battery"],
+	"modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "battery", "custom/power"],
 	"disable-scroll": true,
 	"hyprland/workspaces": {
 		"format": "{icon}",
@@ -21,6 +21,21 @@
 			"default": ""
 		}
 	},
+    "cpu": {
+        "interval": 15,
+        "format": "   {usage}%"
+    },
+    "memory": {
+        "interval": 30,
+        "format": "   {percentage}%",
+        "tooltip-format": "{used:0.1f}GiB"
+    },
+    "disk": {
+        "interval": 30,
+        "format": "   {percentage_used}%",
+        "path": "/",
+        "tooltip-format": "{used}/{total}"
+    },
 	"battery": {
 		"format": "{icon}  {capacity}%",
 		"format-icons": ["", "", "", "", ""],
@@ -47,5 +62,10 @@
 			"default": ["", "", ""]
 		},
 		"tooltip": false
-	}
+	},
+    "custom/power": {
+        "format": "",
+        "on-click": "~/.config/wofi/powermenu.sh",
+        "tooltip": false
+    }
 }

@@ -13,9 +13,14 @@ window {
 	padding: 8px;
 }
 
+#text:selected {
+    color: white;
+}
+
 #entry:selected {
 	background-color: black;
 	border-radius: 8px;
+    color: white;
 }
 
 #input {

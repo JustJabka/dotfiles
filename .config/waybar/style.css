@@ -15,11 +15,17 @@ window {
 	text-shadow: 0 2px 2px black;
 }
 
+tooltip {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
 #workspaces {
     background: transparent;
-	border-style: solid;
-	border-color: transparent;
 	color: transparent;
+    border: none;
 }
 
 #workspaces button {
@@ -29,7 +35,7 @@ window {
 
 #workspaces button:hover {
 	background: transparent;
-	color: transparent;
+    color: transparent;
 	border: none;
 	outline: none;
 	box-shadow: none;
