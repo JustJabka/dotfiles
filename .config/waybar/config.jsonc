@@ -5,7 +5,7 @@
 	"height": 30,
 	"modules-left": ["cpu", "memory", "disk", "hyprland/workspaces"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "battery", "custom/power"],
+	"modules-right": ["tray", "hyprland/language", "wireplumber", "network", "battery", "custom/power"],
 	"disable-scroll": true,
 	"hyprland/workspaces": {
 		"format": "{icon}",
@@ -43,7 +43,7 @@
 	},
 	"network": {
 		"format-wifi": "   {essid}",
-		"format-ethernet": "󰈀  {ipaddr}",
+		"format-ethernet": "󰈀  Ethernet",
 		"format-disconnected": "󰤭  Disconnected",
 		"tooltip": false
 	},
@@ -55,12 +55,13 @@
 		"format": "   {1}",
 		"tooltip": false,
 	},
-	"pulseaudio": {
+	"wireplumber": {
 		"format": "{icon}  {volume}%",
 		"format-muted": "",
 		"format-icons": {
 			"default": ["", "", ""]
 		},
+        "on-click": "~/.config/wofi/audiomenu.sh",
 		"tooltip": false
 	},
     "custom/power": {

@@ -2,7 +2,7 @@
 
 options=" Shutdown\n󰑓 Reboot\n Lock"
 
-chosen=$(echo -e $options | wofi --dmenu --prompt="Powermenu" --sort-order alphabetical --width 300 --height 200)
+chosen=$(echo -e $options | wofi --dmenu --prompt="Powermenu" --sort-order alphabetical)
 
 case "$chosen" in
     " Shutdown") systemctl poweroff ;;
